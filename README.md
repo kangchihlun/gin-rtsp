@@ -52,6 +52,15 @@ ffmpeg -rtsp_transport tcp -re -i 'rtsp://admin:password@192.168.3.10:554/cam/re
 显示效果
 ![](./video-example.png)
 
+## Kang'Note 
+似乎沒有 serve static file?已加入
+```
+centos 開發環境配置
+yum install -y locales tzdata
+sudo yum install epel-release
+sudo yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+sudo yum install ffmpeg ffmpeg-devel
 
+```
 ## 参考
 [JSMpeg – MPEG1 Video & MP2 Audio Decoder in JavaScript](https://github.com/phoboslab/jsmpeg/)

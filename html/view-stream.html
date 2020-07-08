@@ -10,19 +10,20 @@
 
 </head>
 <body>
+	<h1>RTSP Live Stream</h1>
 	<canvas id="video-canvas"></canvas>
 
 	<canvas id="video-canvas1"></canvas>
 
-	<script type="text/javascript" src="jsmpeg.min.js"></script>
+	<script type="text/javascript" src="/assets/jsmpeg.min.js"></script>
 	<script type="text/javascript">
 		var canvas = document.getElementById('video-canvas');
-		var url = 'ws://192.168.3.19:4000/stream/live/5b96bff4-bdb2-3edb-9d6e-f96eda03da56';
+		var url = 'ws://192.168.3.19:4000/stream/live/80773fd1-c07d-3f57-a061-242fa3d6db1e';
 		var player = new JSMpeg.Player(url, {canvas: canvas});
 
 
 		var canvas1 = document.getElementById('video-canvas1');
-		var url1 = 'ws://127.0.0.1:3000/stream/live/5b96bff4-bdb2-3edb-9d6e-f96eda03da56';
+		var url1 = 'ws://127.0.0.1:3000/stream/live/80773fd1-c07d-3f57-a061-242fa3d6db1e';
 		var player1 = new JSMpeg.Player(url1, {canvas: canvas1});
 
 	</script>
